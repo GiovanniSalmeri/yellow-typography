@@ -8,7 +8,7 @@ class YellowTypography {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
-        $this->yellow->system->setDefault("typographyTitleParser", "safemarkdown"); // safemarkdown, none
+        $this->yellow->system->setDefault("typographyTitleParser", "safemarkdown"); // safemarkdown, markdown, none
         $this->yellow->system->setDefault("typographySubstitutions", "quotes, apostrophe, dash, dots, space");
         $this->yellow->system->setDefault("typographyHyphenation", "1");
     }
