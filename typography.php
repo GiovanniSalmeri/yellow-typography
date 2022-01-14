@@ -91,7 +91,7 @@ class YellowTypography {
                             return "\n";
                         } elseif ($char[0]=="\"") {
                             $openPrincipal = !$openPrincipal;
-                            if ($openPrincipal) $openSecondary = true;
+                            //if ($openPrincipal) $openSecondary = true;
                             return $realQuotes[0][$openPrincipal];
                         } elseif ($char[0]=="'") {
                             $openSecondary = !$openSecondary;
