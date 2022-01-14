@@ -67,9 +67,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 This extension uses [Hyphenopoly 4.12.0](https://github.com/mnater/Hyphenopoly) by Mathias Nater.
 
- - client side hyphenation for webbrowsers
- * ©2021  
-
 ## Developer
 
 Giovanni Salmeri. [Get help](https://github.com/GiovanniSalmeri/yellow-autopublish/issues).
