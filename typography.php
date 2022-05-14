@@ -2,7 +2,7 @@
 // Typography extension, https://github.com/GiovanniSalmeri/yellow-typography
 
 class YellowTypography {
-    const VERSION = "0.8.19";
+    const VERSION = "0.8.20";
     public $yellow;         // access to API
 
     // Handle initialisation
@@ -14,7 +14,7 @@ class YellowTypography {
     }
 
     // Handle page meta data
-    public function onParseMeta($page) {
+    public function onParseMetaData($page) {
         if ($this->yellow->system->get("typographyTitleParser")!=="none") {
             $titleContent = $page->get("titleContent");
             if ($this->yellow->system->get("typographyTitleParser")=="safemarkdown") $titleContent = htmlspecialchars($titleContent);
