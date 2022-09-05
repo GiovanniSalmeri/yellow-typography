@@ -2,7 +2,7 @@ Typography 0.8.20
 =================
 Typographic enhancements.
 
-<p align="center"><img src="typography-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
+<p align="center"><img src="typography-screenshot.png?raw=true" alt="Screenshot"></p>
 
 ## How to style the title of the page
 
