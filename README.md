@@ -69,4 +69,4 @@ This extension uses [Hyphenopoly 4.12.0](https://github.com/mnater/Hyphenopoly) 
 
 ## Developer
 
-Giovanni Salmeri. [Get help](https://github.com/GiovanniSalmeri/yellow-autopublish/issues).
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
