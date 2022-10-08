@@ -63,7 +63,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Installation
 
-[Download extension](https://github.com/GiovanniSalmeri/yellow-typography/archive/master.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+[Download extension](https://github.com/GiovanniSalmeri/yellow-typography/archive/main.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
 This extension uses [Hyphenopoly 4.12.0](https://github.com/mnater/Hyphenopoly) by Mathias Nater.
 
