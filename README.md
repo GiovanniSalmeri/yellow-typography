@@ -4,6 +4,10 @@ Typographic enhancements.
 
 <p align="center"><img src="typography-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download ZIP file](https://github.com/GiovanniSalmeri/yellow-typography/archive/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to style the title of the page
 
 Change in the template (e.g. in `layouts/default.html`) `$this->yellow->page->getHtml("titleContent")` with `$this->yellow->page->get("titleContent")` and use markdown to style the title of the page.
@@ -61,12 +65,10 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `TypographySubstitutions` (default `quotes, apostrophe, dash, dots, space`) = which characters will be converted (`space` is useful only in French texts)  
 `TypographyHyphenation` (default `1`) = enable hyphenation  
 
-## Installation
+## Acknowledgements
 
-[Download extension](https://github.com/GiovanniSalmeri/yellow-typography/archive/main.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
-
-This extension uses [Hyphenopoly 4.12.0](https://github.com/mnater/Hyphenopoly) by Mathias Nater.
+This extension includes [Hyphenopoly 4.12.0](https://github.com/mnater/Hyphenopoly) by Mathias Nater. Thank you for the good work.
 
 ## Developer
 
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
