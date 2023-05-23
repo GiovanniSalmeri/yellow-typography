@@ -61,9 +61,9 @@ Stylesheet rule for hyphenating words when needed at end of line:
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`TypographyTitleParser` (default `safemarkdown`) = how titles are styled (possible values: `markdown`, `safemarkdown` without HTML, `none`)  
-`TypographySubstitutions` (default `quotes, apostrophe, dash, dots, space`) = which characters will be converted (`space` is useful only in French texts)  
-`TypographyHyphenation` (default `1`) = enable hyphenation  
+`TypographyTitleParser` = how titles are styled (possible values: `markdown`, `safemarkdown` without HTML, `none`)  
+`TypographySubstitutions` = which characters will be converted (`space` is useful only in French texts)  
+`TypographyHyphenation` = enable hyphenation  
 
 ## Acknowledgements
 
