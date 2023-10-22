@@ -38,7 +38,7 @@ Template for styled titles:
     <div class="content">
     <div class="main" role="main">
     <h1><?php echo $this->yellow->page->get("titleContent") ?></h1>
-    <?php echo $this->yellow->page->getContent() ?>
+    <?php echo $this->yellow->page->getContentHtml() ?>
     </div>
     </div>
     <?php $this->yellow->layout("footer") ?>
