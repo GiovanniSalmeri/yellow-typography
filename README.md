@@ -1,4 +1,4 @@
-Typography 0.8.20
+Typography 0.8.21
 =================
 Typographic enhancements.
 
