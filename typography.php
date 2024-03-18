@@ -11,7 +11,7 @@ class YellowTypography {
         $this->yellow->system->setDefault("typographyTitleParser", "safemarkdown"); // safemarkdown, markdown, none
         $this->yellow->system->setDefault("typographySubstitutions", "quotes, apostrophe, dash, dots, space");
         $this->yellow->system->setDefault("typographyHyphenation", "1");
-        $this->yellow->language->setDefaults([
+        $this->yellow->language->setDefaults(array(
             "Language: ca",
             "TypographyQuotes: «, », “, ”",
             "TypographyApostropheExceptions:",
@@ -152,7 +152,7 @@ class YellowTypography {
             "TypographyQuotes: „, “, ‘, ’",
             "TypographyApostropheExceptions:",
             "TypographyAltParsing: 0",
-        ]);
+        ));
     }
 
     // Handle page meta data
