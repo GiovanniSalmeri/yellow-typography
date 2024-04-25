@@ -2,7 +2,7 @@
 // Typography extension, https://github.com/GiovanniSalmeri/yellow-typography
 
 class YellowTypography {
-    const VERSION = "0.8.21";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
 
     // Handle initialisation
@@ -290,9 +290,9 @@ class YellowTypography {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}typography-hyphenopoly-settings.js\"></script>\n";
-            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}typography-hyphenopoly-loader.js\"></script>\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-settings.js\"></script>\n";
+            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-loader.js\"></script>\n";
         }
         return $output;
     }

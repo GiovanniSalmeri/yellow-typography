@@ -1,5 +1,5 @@
-Typography 0.8.21
-=================
+# Typography 0.9.1
+
 Typographic enhancements.
 
 <p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
@@ -64,6 +64,8 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `TypographyTitleParser` = how titles are styled, `markdown`, `safemarkdown` without HTML, `none`  
 `TypographySubstitutions` = a comma separated list of characters which will be converted, e.g. `quotes`, `apostrophe`, `dash`, `dots`, `space` (`space` is used only in French texts)  
 `TypographyHyphenation` = enable hyphenation, 0 or 1  
+
+Use [Perpage](https://github.com/GiovanniSalmeri/yellow-perpage) if you want to ovverride these settings for a single page.
 
 ## Acknowledgements
 
