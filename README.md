@@ -10,7 +10,7 @@ Typographic enhancements.
 
 ## How to style the title of the page
 
-Change in the template (e.g. in `layouts/default.html`) `$this->yellow->page->getHtml("titleContent")` with `$this->yellow->page->get("titleContent")` and use markdown to style the title of the page.
+Change in all templates (e.g. in `layouts/default.html`, `layouts/blog.html`, `layouts/search.html`) `$this->yellow->page->getHtml("titleContent")` with `$this->yellow->page->get("titleContent")` and use markdown to style the title of the page.
 
 ## How to insert proper quotations marks and other characters
 
