@@ -157,13 +157,22 @@ class YellowTypography {
 
     // Handle page meta data
     public function onParseMetaData($page) {
-        if ($this->yellow->page==$page) {
+        if ($page->get("status")!=="shared") {
             if ($this->yellow->system->get("typographyTitleParser")!=="none") {
+                $title = $page->get("title");
                 $titleContent = $page->get("titleContent");
-                if ($this->yellow->system->get("typographyTitleParser")=="safemarkdown") $titleContent = htmlspecialchars($titleContent);
+                $titleNavigation = $page->get("titleNavigation");
+                $titleHeader = $page->get("titleHeader");
+                if ($this->yellow->system->get("typographyTitleParser")=="safemarkdown") {
+                    $title = htmlspecialchars($title);
+                    $titleContent = htmlspecialchars($titleContent);
+                    $titleNavigation = htmlspecialchars($titleNavigation);
+                    $titleHeader = htmlspecialchars($titleHeader);
+                }
+                $page->set("title", $this->formatTitle($title, true));
                 $page->set("titleContent", $this->formatTitle($titleContent));
-                $page->set("titleNavigation", $this->formatTitle($page->get("titleNavigation"), true));
-                $page->set("titleHeader", $this->formatTitle($page->get("titleHeader"), true));
+                $page->set("titleNavigation", $this->formatTitle($titleNavigation, true));
+                $page->set("titleHeader", $this->formatTitle($titleHeader, true));
             }
         }
     }
@@ -257,15 +266,17 @@ class YellowTypography {
         return $text;
     }
 
+    // Format title
     private function formatTitle($text, $noTags = false) {
         $store = [];
-        $text = htmlspecialchars_decode($text);
 	$text = preg_replace_callback('/<.+?>/', function($match) use (&$store) { $store[] = $match[0]; return "<placeholder>"; }, $text);
         $text = $this->picoMarkdown($text, $noTags);
-        $text = preg_replace_callback('/<placeholder>/', function($match) use (&$store, $noTags) { return $noTags ? '' : array_shift($store); }, $text);
+        $text = preg_replace_callback('/<placeholder>/', function($match) use (&$store, $noTags) { return array_shift($store); }, $text);
+        if ($noTags) { $text = preg_replace("/<.*?>/", "", $text); }
         return $text;
     }
 
+    // Parse tiny subset of markdown
     private function picoMarkdown($text, $noTags = false) {
         $html = [
             '*'=>[ '<em>', '</em>' ],
