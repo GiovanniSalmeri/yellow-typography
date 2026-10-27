@@ -2,7 +2,7 @@
 // Typography extension, https://github.com/GiovanniSalmeri/yellow-typography
 
 class YellowTypography {
-    const VERSION = "0.9.1";
+    const VERSION = "1.0.0";
     public $yellow;         // access to API
 
     // Handle initialisation
@@ -302,8 +302,8 @@ class YellowTypography {
         $output = null;
         if ($name=="header") {
             $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
-            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-settings.js\"></script>\n";
-            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-loader.js\"></script>\n";
+            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-settings.js\"></script>\n";
+            if ($this->yellow->system->get("typographyHyphenation")) $output .= "<script defer=\"defer\" src=\"{$assetLocation}typography-hyphenopoly-loader.js\"></script>\n";
         }
         return $output;
     }
